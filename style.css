@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI',sans-serif;
+    color: #FFF;
+    font-weight: 600;
+}
+.header{
+    padding: 7px;
+    background: url(./bg.png);
+    background-position: center right;
+    background-size: cover;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.toggle-btn{
+    display: none;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    display: none;
+}
+.navlist{
+    list-style-type: none;
+}
+.navlist .section{
+    display: inline;
+}
+.navlist  .dropicon{
+    border: 1px solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: inline-block;
+    padding: 3px 3px;
+    margin: 5px 0 1px 4px;
+}
+.navlist .register{
+    background: #F47C19;
+    padding:8px;
+    border-radius: 15px;
+    font-weight: 500;
+}
+.navlist .section{
+    padding: 5px;
+}
+.mobile-nav{
+    display: none;
+}
+.banner{
+    margin: 170px 0;
+}
+.banner .heading{
+    font-size: 45px;
+    line-height: 55px;
+
+}
+.search-box{
+    position: relative;
+}
+.search-bar{
+    padding: 13px;
+    width: 41%;
+}
+.search-button{
+    position: absolute;
+    left: 29rem;
+    padding: 8px 8px 8px 10px;
+    background: #F47C19;
+    border: none;
+    font-size: 23px;
+    font-weight: 400;
+}
+.service .link{
+    text-decoration: none;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        width: 960px;
+    }
+    .banner .heading{
+        font-size: 35px;
+        line-height: 45px;
+    
+    }
+    .banner{
+        margin: 60px 0;
+    }
+    .search-button{
+        left: 24rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) 
+  {
+    .container{
+        width: 720px;
+    }
+    .navbar{
+        justify-content: flex-start;
+    }
+    .icon{
+        margin: 2px 0;
+    }
+    .logo{
+        padding: 0 10px;
+    }
+    
+    .banner{
+        margin: 35px 0;
+    }
+    .banner .heading{
+        font-size: 32px;
+        line-height: 33px;
+    
+    }
+    .search-button{
+        left: 18rem;
+    }
+    .navlist{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -260px;
+
+    }
+    .description{
+        margin: 3px 0;
+    }
+    .service{
+        font-size: 14px;
+    }
+    .mobile-nav.responsive {
+        position: relative;
+    }
+    .icon{
+        display: block;
+    }
+  
+  
+  .mobile-nav.responsive{
+    width: 40%;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    background: white;
+    transition: all 0.5s ease-in;
+  }
+  .mobile-nav.responsive .mobile-section{
+    color: black;
+    margin: 8px 20px;
+    list-style-type: none;
+  }}

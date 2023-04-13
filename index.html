@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workolics</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header" >
+        <div class="container" >
+            <div class="navbar">
+                <a href="javascript:void(0);" class="icon" onclick="toggle()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                <img src="./assets/logo_white.svg" alt="" class="logo">
+                <ul class="navlist" >
+                    <li class="section">How It Works</li>
+                    <li class="section">Find Work</li><span class="dropicon"></span>
+                    <li class="section">Rate Calculator</li>
+                    <li class="section">About Us</li>
+                    <li class="section"><span class="register">FREE REGISTRATION</span></li>
+                    <li class="section">Login</li>
+                </ul>
+                
+                <ul class="mobile-nav" id="toggle" >
+                    
+                      <img src="./assets/mobile-logo.png" alt="" class="logo">
+                    <li class="mobile-section">How It Works</li>
+                    <li class="mobile-section">Find Work</li><span class="dropicon"></span>
+                    <li class="mobile-section">Rate Calculator</li>
+                    <li class="mobile-section">About Us</li>
+                    <li class="mobile-section">FREE Registration</li>
+                    <li class="mobile-section">Login</li>
+                    
+                </ul>
+                
+                </div>
+                <div class="banner" >
+                    <h1 class="heading">Get Freelancing Jobs Instantly <br>
+                        Start Working for Yourself!</h1>
+                        <p class="description">Join the largest community of freelancers in India!
+                        </p>
+                        <br><br>
+                        <div class="search-box">
+                            <input type="text" class="search-bar" placeholder="What Skills are you looking for?">
+                            <input type="submit" value="SEARCH" class="search-button">
+                        </div>
+                        <br>
+                        <div class="service">
+                            <a href="" class="link">Academic Writing |</a>
+                            <a href="" class="link">CV/Resume Writing |</a>
+                            <a href="" class="link">Copywriting</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+
+    <script>
+        
+        function toggle() {
+          var x = document.getElementById("toggle");
+          
+          if (x.className === "mobile-nav") {
+            x.className += " responsive";
+          } 
+          else if(x.className ==="mobile-nav responsive"){
+            x.className -="mobile-nav";
+          }
+          else {
+            x.className = "mobile-nav";
+          }
+        }
+        </script>
+</body>
+</html>
